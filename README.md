@@ -6,9 +6,10 @@ and the Rockbuster Stealth management team is planning to use its existing movie
 This project serves to support Rockbuster Stealth’s business intelligence (BI) department to help with the launch strategy for the new online video service.
 ## Key Questions
 The Rockbuster Stealth Management Board has asked a series of business questions to drive their 2020 company strategy:
-● Which movies contributed the most/least to revenue gain?
-● What was the average rental duration for all videos?
-● Which countries are Rockbuster customers based in?
-● Where are customers with a high lifetime value based?
-● Do sales figures vary between geographic regions?
+-Which movies contributed the most/least to revenue gain?
+-What was the average rental duration for all videos?
+-Which countries are Rockbuster customers based in?
+-Where are customers with a high lifetime value based?
+-Do sales figures vary between geographic regions?
 
+Please see the final presentation with Tableau visualizations [here](
