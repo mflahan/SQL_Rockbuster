@@ -1,0 +1,10 @@
+## Here is an example using joins to determine which movie category brought in the highest revenue
+
+SELECT A.name AS category_name, SUM(amount) AS total_revenue					
+FROM category A					
+INNER JOIN film_category B ON A.category_id = B.category_id					
+INNER JOIN inventory C ON B.film_id = C.film_id					
+INNER JOIN rental D ON C. inventory_id = D.inventory_id					
+INNER JOIN payment E ON D.rental_id = E.rental_id					
+GROUP BY category_name					
+ORDER BY total_revenue DESC;					
