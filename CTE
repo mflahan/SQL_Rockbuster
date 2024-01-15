@@ -1,0 +1,20 @@
+## Here is an example of a common table expression used for the analysis of top customers.
+WITH top_5_customers (customer_id, first_name, last_name, city, country, total_payment_amount)
+AS (SELECT B. customer_id,					
+	   B. first_name,				
+	   B. last_name,				
+	   D. city,				
+	   E. country,				
+	SUM(A. amount) AS total_payment_amount				
+FROM payment A					
+INNER JOIN customer B ON A.customer_id = B.customer_id					
+INNER JOIN address C ON B.address_id = C.address_id					
+INNER JOIN city D ON C.city_id = D.city_id					
+INNER JOIN country E ON D.country_id = E.country_id					
+GROUP BY B.customer_id, first_name, last_name, city, country					
+HAVING city IN ('Aurora','Acua','Citrus Heights','Iwaki','Ambattur',					
+	'Shanwei','So Leopoldo','Teboksary','Tianjin','Cianjur')				
+ORDER BY total_payment_amount DESC					
+LIMIT 5)
+SELECT AVG (total_payment_amount) AS average
+FROM top_5_customers
