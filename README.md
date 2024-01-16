@@ -1,6 +1,6 @@
 # SQL_Rockbuster
 Demonstration of SQL queries used to answer business questions for fictional video rental service Rockbuster 
-
+## Objective
 Rockbuster Stealth LLC is a fictional movie rental company facing stiff competition from streaming services such as Netflix and Amazon Prime,
 and the Rockbuster Stealth management team is planning to use its existing movie licenses to launch an online video rental service in order to stay competitive. 
 This project serves to support Rockbuster Stealth’s business intelligence (BI) department to help with the launch strategy for the new online video service.
